@@ -11,7 +11,7 @@ class AprendicesController extends Controller
         $Aprendices= aprendices::join('universitarios', 'aprendices.id_aprendiz','=','universitarios.id_universitario')
         ->select('nombres', 'apellidos', 'pasion','universitarios.nombres','universitarios.apellidos','universitarios.email')
         ->orderBy('universitarios.nombres', 'asc')
-        ->paginate(10);
+        ->get();
         return[
             'aprendiz'=>$Aprendices
         ];

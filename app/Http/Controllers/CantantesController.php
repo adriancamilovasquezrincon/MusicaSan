@@ -42,6 +42,7 @@ class CantantesController extends Controller
         $Cantantes->direccion= $request->direccion;
         $Cantantes->edad= $request->edad;
         $Cantantes->cant_socio= $request->cant_socio;
+        
         $Cantantes->save();
     }
 
