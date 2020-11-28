@@ -16,7 +16,7 @@ Route::get('/', function () {
 });
 
 //Socios
-Route::get('/api/socios','SociosController@index');
+Route::get('/api/socio','SociosController@index');
 Route::post('/api/socio/guardar','SociosController@store')->name('guardar');
 Route::put('/api/socio/actualizar','SociosController@update')->name('actualizar');
 Route::delete('/api/socio/eliminar','SociosController@destroy')->name('eliminar');

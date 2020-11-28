@@ -1,0 +1,32 @@
+texto con peticiones
+socios añadir
+{
+	"nombres": "Edwin J.",
+	"apellidos": "Páez Rueda",
+	"telefono": "3114636977",
+	"direccion": "Calle 13 # 9 - 67",
+	"edad": 1,
+	"email": "edwinjprrrrrr@gmail.com",
+	"sexo": "Masculino",
+	"contrato": 2
+}
+
+socios actualizar
+{
+	"id_socio":1,
+	"nombres": "Acty",
+	"apellidos": "Páez Rueda",
+	"telefono": "3114636977",
+	"direccion": "Calle 13 # 9 - 67",
+	"edad": 1,
+	"email": "edwinjprrrrrr@gmail.com",
+	"sexo": "Masculino",
+	"contrato": 2
+}
+
+socios eliminar 
+{
+	"id_socio": 2
+}
+
+socios obtener 

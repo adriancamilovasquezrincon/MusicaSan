@@ -8,27 +8,24 @@ class SociosController extends Controller
 {
     public function index()
     {
-        $Socios = socios::orderBy('nombres','asc')
-        ->where('sexo','=','masculino')
-        ->get();
+        $socios = socios::all();
         return [
-            'socios'=> $Socios
+            'socios'=> $socios
         ];
     }
 
     public function store(Request $request)
     {
-       $Socios = new socios();
-       $Socios->nombres= $request->nombres;
-       $Socios->apellidos= $request->apellidos;
-       $Socios->telefono= $request->telefono;
-       $Socios->direccion= $request->direccion;
-       $Socios->edad= $request->edad;
-       $Socios->email= $request->email;
-       $Socios->sexo= $request->sexo;
-       $Socios->contrato= $request->contrato;
-
-       $Socios->save();
+       $socios = new socios();
+       $socios->nombres = $request->nombres;
+       $socios->apellidos = $request->apellidos;
+       $socios->telefono = $request->telefono;
+       $socios->direccion = $request->direccion;
+       $socios->edad = $request->edad;
+       $socios->email = $request->email;
+       $socios->sexo = $request->sexo;
+       $socios->contrato = $request->contrato;
+       $socios->save();
     }
     public function update(Request $request)
     {
